@@ -94,12 +94,7 @@ const parse = (raw: string, protagonist: string) => {
 
 function RawParser() {
   const [raw, setRaw] = useState("");
-  const [parsed, setParsed] = useState<{
-    result: string | null;
-    message: string;
-    version: string;
-    initMessages: string;
-  } | null>(null);
+  const [parsed, setParsed] = useState<any>(null);
   const [protagonist, setProtagonist] = useState(
     "楓" as "楓" | "椛" | "主任" | "Hero" | "Default"
   );
